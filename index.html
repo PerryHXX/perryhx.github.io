@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Portfolio, PerryHX, Software Developer, Developer, Software Engineer, Programmer, Python Developer, Node.js Developer, Discord Bot Developer, AI Developer, Full Stack Developer, Web Developer, Stock News Analyzer, TikTok AI Pipeline, MagicMirror Developer, Pump.fun Bot, Web3 Developer, Solana Developer, Blockchain Developer, FastAPI Developer, Automation Developer, Real-time Monitoring, Push Notifications, Mobile Development, Voice Recognition, Computer Vision, Image Generation, Text-to-Speech, Video Processing, OpenCV, FFmpeg, REST API, API Development, Backend Developer, Frontend Developer, Problem Solving, Technical Expertise, Continuous Learning, Software Development Career, Development Team, Innovative Projects, Portfolio Website, GitHub, Discord, Steam" />
+    <meta name="description" content="Welcome to PerryHX's Portfolio. Software Developer specialized in Python, Node.js, Discord bots, AI development, and automation." />
+    <meta name="author" content="PerryHX">
+    <title>Portfolio - PerryHX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">PERRYHX</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">INITIALIZING...</div>
+        </div>
+    </div>
+
+    <!-- Particle Container -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline preload="metadata" class="background-video">
+        <source src="loop/cyberloop.mp4" type="video/mp4">
+    </video>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-text">PerryHX</div>
+                <nav class="nav">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#upcoming-projects">Upcoming Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="code-icon"><i class="fas fa-code"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-center">
+                    <div class="hero-intro">
+                        <p class="intro-text">HI! I'M</p>
+                        <h1 class="hero-name">PERRYHX</h1>
+                        <p class="hero-tagline">A DEVELOPER WHO FOLLOWS THEIR PASSION FOR TECHNOLOGY.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content">
+                <p class="quote-text">The important thing is not to stop <span class="highlight-purple">questioning</span>.<br><span class="highlight-purple">Curiosity</span> has its own reason for existing.<br><span class="quote-author-box">- Albert Einstein</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="project-item">
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">Stock News Analyzer Bot</h3>
+                    </div>
+                    <p class="project-description">An automated Discord bot that monitors stock news in real-time and analyzes their impact on stock prices. The bot identifies significant news, extracts company tickers, performs AI-powered analysis, and tracks price movements. Features include custom API integration, ticker recognition, potential trading opportunity detection, and comprehensive statistics tracking.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Discord API</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">yfinance</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item"><i class="fas fa-check"></i> Real-time news monitoring</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> AI-powered impact analysis</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Automated ticker recognition</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Custom API with no rate limits</div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="project-screenshot">
+                        <div class="screenshot-content code-preview">
+                            <div class="code-line"><span class="code-keyword">def</span> <span class="code-function">analyze_news</span>(news):</div>
+                            <div class="code-line">    <span class="code-comment"># GPT-powered analysis</span></div>
+                            <div class="code-line">    ticker = <span class="code-function">extract_ticker</span>(news)</div>
+                            <div class="code-line">    impact = <span class="code-function">gpt_analyze</span>(news)</div>
+                            <div class="code-line">    <span class="code-keyword">return</span> {ticker, impact}</div>
+                            <div class="code-line"></div>
+                            <div class="code-line"><span class="code-keyword">async def</span> <span class="code-function">send_to_discord</span>():</div>
+                            <div class="code-line">    <span class="code-comment"># Real-time notifications</span></div>
+                            <div class="code-line">    <span class="code-keyword">await</span> channel.<span class="code-function">send</span>(embed)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item reverse">
+                <div class="project-image">
+                    <div class="project-screenshot">
+                        <div class="screenshot-content code-preview">
+                            <div class="code-line"><span class="code-keyword">def</span> <span class="code-function">generate_video</span>():</div>
+                            <div class="code-line">    story = <span class="code-function">generate_story</span>(prompt)</div>
+                            <div class="code-line">    audio = <span class="code-function">text_to_speech</span>(story)</div>
+                            <div class="code-line">    timestamps = <span class="code-function">whisper_transcribe</span>(audio)</div>
+                            <div class="code-line">    video = <span class="code-function">create_video</span>(</div>
+                            <div class="code-line">        audio, timestamps, background)</div>
+                            <div class="code-line">    <span class="code-keyword">return</span> video</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">TikTok AI Story Pipeline</h3>
+                    </div>
+                    <p class="project-description">An automated pipeline that generates TikTok-style vertical videos with AI-generated stories, text-to-speech narration, and word-level timed captions. The system creates 1080x1920 vertical videos with synchronized captions, background video support, and multi-language capabilities. Features precise word-by-word timing using speech recognition technology.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">FFmpeg</span>
+                        <span class="tech-tag">Text-to-Speech</span>
+                        <span class="tech-tag">Speech Recognition</span>
+                        <span class="tech-tag">Video Processing</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item"><i class="fas fa-check"></i> Word-level timestamp synchronization</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Automated video generation pipeline</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Multi-language support</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Custom background video integration</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item reverse">
+                <div class="project-image">
+                    <div class="project-screenshot">
+                        <div class="screenshot-content code-preview">
+                            <div class="code-line"><span class="code-keyword">async function</span> <span class="code-function">createToken</span>() {</div>
+                            <div class="code-line">    <span class="code-comment">// Generate token metadata</span></div>
+                            <div class="code-line">    metadata = <span class="code-function">generateMetadata</span>()</div>
+                            <div class="code-line">    <span class="code-comment">// Upload to IPFS</span></div>
+                            <div class="code-line">    uri = <span class="code-function">uploadToIPFS</span>(metadata)</div>
+                            <div class="code-line">    <span class="code-comment">// Create token & buy</span></div>
+                            <div class="code-line">    <span class="code-keyword">await</span> <span class="code-function">createAndBuy</span>(uri)</div>
+                            <div class="code-line">}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">Pump.Fun Token Creation Bot</h3>
+                    </div>
+                    <p class="project-description">An intelligent automated bot that creates new tokens on pump.fun at configurable intervals, performs initial purchases, and executes immediate sales. Features automated metadata generation, IPFS integration, and comprehensive transaction management. Includes advanced configuration options for trading parameters, slippage control, and priority fee management.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Solana</span>
+                        <span class="tech-tag">Web3</span>
+                        <span class="tech-tag">IPFS</span>
+                        <span class="tech-tag">Blockchain</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item"><i class="fas fa-check"></i> Automated token creation pipeline</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> IPFS metadata storage</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Configurable trading strategies</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Real-time transaction monitoring</div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-content">
+                    <div class="project-header">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">MagicMirror Voice Assistant</h3>
+                    </div>
+                    <p class="project-description">An advanced voice-controlled assistant module for MagicMirror with comprehensive multimodal capabilities. Features wake word detection, real-time speech recognition, natural language processing, and conversational AI. Includes camera integration for visual analysis, image generation capabilities, animated text display, and smart voice activity detection. Supports continuous conversations with automatic context management and seamless multi-modal interactions. Can analyze images to provide recipes, identify objects, explain how to use tools or instruments, and generate visual guides on demand.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MagicMirror</span>
+                        <span class="tech-tag">Voice Recognition</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Image Generation</span>
+                        <span class="tech-tag">Audio Processing</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item"><i class="fas fa-check"></i> Wake word detection (Porcupine)</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Camera integration & visual analysis</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Animated text display system</div>
+                        <div class="feature-item"><i class="fas fa-check"></i> Continuous conversation mode</div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="project-screenshot">
+                        <div class="screenshot-content code-preview">
+                            <div class="code-line"><span class="code-keyword">async</span> <span class="code-function">startConversation</span>() {</div>
+                            <div class="code-line">    audio = <span class="code-function">recordAudio</span>()</div>
+                            <div class="code-line">    text = <span class="code-function">speechToText</span>(audio)</div>
+                            <div class="code-line">    response = <span class="code-function">processQuery</span>(text)</div>
+                            <div class="code-line">    <span class="code-keyword">if</span> (needsCamera) {</div>
+                            <div class="code-line">        image = <span class="code-function">captureImage</span>()</div>
+                            <div class="code-line">        analysis = <span class="code-function">analyzeImage</span>(image)</div>
+                            <div class="code-line">    }</div>
+                            <div class="code-line">    <span class="code-keyword">await</span> <span class="code-function">textToSpeech</span>(response)</div>
+                            <div class="code-line">}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Projects Section -->
+    <section id="upcoming-projects" class="upcoming-projects">
+        <div class="container">
+            <h2 class="section-title">Upcoming Projects</h2>
+            <div class="upcoming-project-item">
+                <div class="upcoming-project-content">
+                    <div class="upcoming-project-header">
+                        <span class="upcoming-project-label">In Development</span>
+                        <h3 class="upcoming-project-title">Personal Stock News Monitor Bot</h3>
+                    </div>
+                    <p class="upcoming-project-description">A personal stock monitoring bot that tracks significant news for pre-configured stocks in my portfolio. This project was born from a real need: managing my own stock investments while not having time to constantly monitor news. After experiencing losses when Rockstar delayed GTA and stock prices dropped, I realized the value of automated news monitoring. The bot will help identify critical news early, allowing for timely decisions to sell at profit or buy during dips, preventing avoidable losses. The system will send push notifications directly to your phone, ensuring you never miss critical stock news even when you're away from your computer.</p>
+                    <div class="upcoming-project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">News API</span>
+                        <span class="tech-tag">Stock Analysis</span>
+                        <span class="tech-tag">Automation</span>
+                        <span class="tech-tag">Real-time Monitoring</span>
+                        <span class="tech-tag">Push Notifications</span>
+                        <span class="tech-tag">Mobile Alerts</span>
+                    </div>
+                    <div class="upcoming-project-features">
+                        <div class="feature-item"><i class="fas fa-clock"></i> Real-time news monitoring for custom stock list</div>
+                        <div class="feature-item"><i class="fas fa-bell"></i> Automated alerts for significant news events</div>
+                        <div class="feature-item"><i class="fas fa-mobile-alt"></i> Push notifications to phone for instant alerts</div>
+                        <div class="feature-item"><i class="fas fa-chart-line"></i> Price impact analysis and trend detection</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-text">Want to connect or discuss a project? Feel free to reach out through Discord or check out my Steam profile!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord: PerryHX</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-steam"></i>
+                    <a href="https://steamcommunity.com/profiles/76561198885223364/" target="_blank" rel="noopener noreferrer" class="steam-link">Steam Profile</a>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://steamcommunity.com/profiles/76561198885223364/" target="_blank" rel="noopener noreferrer" class="social-icon"><i class="fab fa-steam"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Overlay -->
+    <div class="footer-overlay">
+        <div class="footer-content">
+            <span>Improve performance by enabling hardware acceleration</span>
+            <div class="footer-actions">
+                <button class="learn-more-btn-small">Learn more</button>
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
